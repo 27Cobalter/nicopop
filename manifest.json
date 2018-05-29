@@ -1,0 +1,13 @@
+﻿{
+  "name": "nico^2pop",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "某動画サイトの動画を別ウィンドウで開く",
+  "content_scripts": [
+    {
+      "matches": ["http://www.nicovideo.jp/watch/*"],
+      "js": ["jquery-2.1.4.min.js", "nicopop.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
