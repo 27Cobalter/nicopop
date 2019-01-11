@@ -5,7 +5,7 @@
   "description": "某動画サイトの動画を別ウィンドウで開く",
   "content_scripts": [
     {
-      "matches": ["http://www.nicovideo.jp/watch/*"],
+      "matches": ["http://www.nicovideo.jp/watch/*", "https://www.nicovideo.jp/watch/*"],
       "js": ["nicopop.js"],
       "run_at": "document_idle"
     }
