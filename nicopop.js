@@ -1,11 +1,12 @@
-﻿$(window).keyup(function(e){
-  // keyCodeでショートカット変えれる : デフォルト F9 -> 120
+﻿// キーイベント取得
+document.onkeyup=function(e){
+  console.log("keyup"+e.keyCode)
   if(e.keyCode==120){
     var url = document.getElementById('MainVideoPlayer').children[0].src;
     console.log("open new window -> "+url)
     windowopen(url);
   }
-});
+};
 
 // 開くウィンドウ指定
 function windowopen(url){
@@ -21,5 +22,5 @@ function windowopen(url){
         </video>\
       </body>\
     </html>\
-');
-  }
+  ');
+}
