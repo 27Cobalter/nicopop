@@ -1,6 +1,5 @@
 ﻿// キーイベント取得
 document.onkeyup=function(e){
-  console.log("keyup"+e.keyCode)
   if(e.keyCode==120){
     var url = document.getElementById('MainVideoPlayer').children[0].src;
     console.log("open new window -> "+url)
